@@ -11,7 +11,7 @@ func Intialize(router *gin.RouterGroup) {
 
 	stationService := service.NewServiceImpl()
 
-	station := router.Group("/station")
+	station := router.Group("/stations")
 	station.GET("", func(c *gin.Context) {
 		GetAllStations(c, stationService)
 	})
