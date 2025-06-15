@@ -1,0 +1,8 @@
+### Check the health of the station service
+GET http://localhost:1500/healthcheck
+
+### Get the list of stations
+GET http://localhost:1500/v1/api/stations
+
+### Get Schedule for a specific station
+GET http://localhost:1500/v1/api/stations/37
